@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/folders.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/root.css">
+    <title>Todo List com Pastas</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>🐶Caramelo <br>To-Do-List</h1>
+        <h2>
+            <a href="/teste"> PAGAR.ME  </a>☚☚ clique aqui
+        </h2>
+        <!-- Contêiner de pastas -->
+        <div id="folders" class="folders"></div>
+        
+        <!-- Seção de tarefas (inicialmente oculta) -->
+        <div id="tasks-container" class="tasks-container" style="display: none;">
+            <!-- Botão de voltar -->
+            <button id="backButton" class="back-button" aria-label="Voltar" onclick="goBack()">
+                ☚
+            </button>
+            
+            <!-- Campo de entrada e botão para adicionar novas tarefas -->
+            <input class="inputNewTask" type="text" id="taskInput" placeholder="Nova tarefa">
+            <div class="task-add">
+                <button>
+                    <div style="
+                             width: 40px; /* Largura do botão */
+                             height: 40px; /* Altura do botão */
+                             background-color: rgba(255, 255, 255, 0); /* Cor de fundo */
+                             color: #0d1be09c; /* Cor do texto */
+                             font-size: 50px; /* Tamanho do símbolo */
+                             line-height: 1; /* Altura da linha para reduzir o espaço vertical */
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             border: none;
+                            ">
+                         <span onclick="addTask()" style="margin-right: 15px;">
+                             +
+                         </span>
+                         <span style="margin-right: 15px;" onclick="showbtnTask()">
+                             <svg height="28" width="10">
+                                 <circle cx="5" cy="3" r="3" fill="black" />
+                                 <circle cx="5" cy="12" r="3" fill="black" />
+                                 <circle cx="5" cy="21" r="3" fill="black" />
+                                </svg>
+                            </span>
+                    </div>
+                </button>
+            </div>
+            <!-- Lista de tarefas -->
+            <div id="tasks"></div>
+        </div>
+
+        <!-- Seção para adicionar novas pastas -->
+        <div>
+            <div id="folder-create" class="folder-container">
+                <input class="inputNewFolder" type="text" id="folderInput" placeholder="Nova Pasta">
+            </div>
+
+            <div id="folder-btn" class="folder-add">
+                <button>
+                    <div style="
+                             padding: 0; /* Remove o espaçamento interno */
+                             margin: 0; 
+                             margin-right: 10px;
+                             width: 40px; /* Largura do botão */
+                             height: 40px; /* Altura do botão */
+                             border-radius: 50%;
+                             background-color: rgba(255, 255, 255, 0); /* Cor de fundo */
+                             color: #0d1be09c; /* Cor do texto */
+                             font-size: 50px; /* Tamanho do símbolo */
+                             line-height: 1; /* Altura da linha para reduzir o espaço vertical */
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             border: none;
+                            " >
+                        <span style="margin-right: 15px;" onclick="addFolder()">+</span>
+                        <span onclick="showbtnFolder()">
+                        <svg height="28" width="10">
+                            <circle cx="5" cy="3" r="3" fill="black" />
+                            <circle cx="5" cy="12" r="3" fill="black" />
+                            <circle cx="5" cy="21" r="3" fill="black" />
+                        </svg>
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

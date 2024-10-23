@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.folder-container {
+  background: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.folders {
+  margin-bottom: 20px;
+}
+
+.folder {
+  background: yellow;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks-container {
+  display: none;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.task {
+  background: blue;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.folder {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos do container */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 0px;
+
+}
+
+.folder-buttons {
+  display: flex;
+  gap: 5px; /* Espaçamento entre os botões */
+}
+
+.drag-handle {
+  width: 20px; /* Largura do ícone */
+  height: 20px; /* Altura do ícone */
+  display: inline-block; /* Para alinhar ao texto */
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  cursor: move; /* Cursor de movimento ao passar sobre o ícone */
+}
+
+.drag-handle svg {
+  width: 100%; /* Faz o SVG ocupar toda a largura do contêiner */
+  height: auto; /* Mantém a proporção do SVG */
+}
+
+.back-button {
+  background-color: #f8f9fa; /* Fundo claro */
+  border: 1px solid #ddd; /* Borda sutil */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer;
+  padding: 10px 15px; /* Aumenta o espaçamento interno */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, border-color 0.3s; /* Transição suave para cor de fundo e borda */
+}
+
+.back-button svg {
+  fill: #28a745; /* Cor da seta */
+  width: 24px; /* Largura da seta */
+  height: 24px; /* Altura da seta */
+  margin-right: 8px; /* Espaço entre a seta e o texto */
+  transition: fill 0.3s; /* Transição suave na mudança de cor */
+}
+
+.back-button:hover {
+  background-color: #e2e6ea; /* Cor de fundo ao passar o mouse */
+  border-color: #b6b8bc; /* Cor da borda ao passar o mouse */
+}
+
+.back-button:hover svg {
+  fill: #218838; /* Cor da seta ao passar o mouse */
+}

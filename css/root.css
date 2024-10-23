@@ -1,0 +1,14 @@
+:root {
+    /* Cores principais inspiradas no Cachorro Caramelo */
+    --caramelo-primary: #d5a253;  /* Cor caramelo clássico */
+    --caramelo-secondary: #f1c78a;  /* Bege claro, pelos mais claros */
+    --caramelo-dark: #a07645;  /* Marrom mais escuro para contrastes */
+    --caramelo-light: #ffedd5;  /* Tom muito claro, quase branco */
+    --caramelo-accent: #eac17c;  /* Cor de destaque */
+    /* Cores adicionais */
+    --background-color: #fffaf0;  /* Cor suave para o fundo */
+    --text-color: #4b3f30;  /* Marrom escuro para texto */
+    --border-color: #e1b079;  /* Cor para bordas e detalhes */
+    --button-color: #c48850;  /* Cor para botões */
+    --button-hover: #b3763d;  /* Cor do botão ao passar o mouse */
+  }

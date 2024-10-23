@@ -1,0 +1,42 @@
+/* buttons.css */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  background-color: #28a74600;
+  padding: 0px;
+  margin: 0px;
+  color: darkblue;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.round-button {
+  width: 30px; /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  border-radius: 50%; /* Forma redonda */
+  border: 2px solid #28a745; /* Borda verde */
+  background-color: transparent; /* Cor de fundo inicial */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+.round-button.filled {
+  background-color: #28a745; /* Cor de fundo quando preenchido */
+}
+
+.round-button:hover {
+  transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
+}
+
+.btnFolder{
+  display: block;
+  margin-right:5px
+}

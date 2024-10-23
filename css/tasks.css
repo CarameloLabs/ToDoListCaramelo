@@ -1,0 +1,47 @@
+/* tasks.css */
+.tasks-container {
+    display: none;
+    padding: 15px;
+  }
+  
+  .task {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .task-add{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-add button{
+    display: flex;
+    align-items: center;
+    background-color: #dddddd00;
+    color: black;
+    font-size: 15px;
+  }
+
+  .inputNewTask{
+    position: absolute;
+    display: none;
+    bottom: 12px;
+    left: 35px;
+    width:60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .TaskDiv{
+    display: flex;
+    width: 0;
+    height: 30px;
+    justify-content: space-evenly;
+    align-items:center;
+  }
